@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import './App.css'
+import Login from './components/Login'
+import MainWindow from './components/MainWIndow'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,7 +9,9 @@ function App() {
   return (
     <>
 
-    <div>Hey its working fine</div>
+      <Login/>
+      <MainWindow/>
+    
       
     </>
   )

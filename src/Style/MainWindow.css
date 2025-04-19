@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .vertical-tabs {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Container */
+  .tab-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ccc;
+    background-color: #f7f7f7;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Top Area */
+  .sidebar-top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: none;
+  }
+  
+  .logo {
+    padding: 24px 16px 12px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* TabList */
+  .custom-tab-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .custom-tab-list .react-tabs__tab {
+    padding: 16px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .custom-tab-list .react-tabs__tab--selected {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #333;
+    border-left: 4px solid #007bff;
+  }
+  
+  /* Bottom Buttons */
+  .sidebar-bottom {
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    background-color: #f7f7f7;
+  }
+  
+  .theme-toggle,
+  .login-button {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .theme-toggle:hover,
+  .login-button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  /* Main Panel */
+  .tab-panels {
+    flex-grow: 1;
+    margin-left: 220px;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px;
+    background: #f8f3ed;
+  }
+  
