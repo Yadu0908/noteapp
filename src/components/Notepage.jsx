@@ -7,7 +7,7 @@ function Notepage (){
 
         <>
 
-        <div>This is note page</div>
+        <div>This is note page.</div>
         
         </>
     )
